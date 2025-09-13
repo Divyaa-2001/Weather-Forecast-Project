@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Weather Forecast Project</title>
+</head>
+
+<body>
+    <div id="container" class="min-h-screen bg-primary">
+        <div class="container mx-auto">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-6 p-4 sm:p-4 lg:p-4 md:p-12 xl:p-12 2xl:p-12 ">
+                <div>
+                    <h1 class="font-bold">Weather Explorer</h1>
+                    <p class="font-normal text-sm">Search current Weather & 5-day Forecast</p>
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-2">
+                        <input id="city-name" class="border-0 border-solid bg-white mt-4 p-1 rounded-md" type="text"
+                            placeholder="Search here..." />
+                        <button id="searchbtn" class="bg-secondary text-white rounded-md mt-4 p-1 px-4">Search</button>
+                        <button id="location" class="border-1 text-secondary rounded-md mt-4 p-1 px-4">Use my
+                            location</button>
+                    </div>
+                </div>
+                <div id="unit" class="flex items-center justify-end gap-2">
+                    <p>Unit</p>
+                    <button id="unitToggleBtn" class="border-1 text-secondary rounded-md p-1 px-4"></button>
+                </div>
+            </div>
+            <div id="weatherInfo" class="grid grid-cols-1 gap-6 px-4 sm:px-4 lg:px-4 md:px-12 xl:px-12 2xl:px-12 ">
+                <div class="bg-white">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-6 p-3">
+                        <div id="temperature"
+                            class="border-1 bg-blue-300 border-secondary rounded-md p-2 text-center flex items-center justify-around">
+                            <div>
+                                <img class="weather-summary-img" src="./images/weather/atmosphere.svg">
+                                <p class="condition-txt text-white">Clouds</p>
+                            </div>
+                            <div>
+                                <p class="temp-text text-2xl text-white">28°C</p>
+                                <p class="country-text text-white">New York</p>
+                                <p class="current-date-txt text-white">Wednesday, 3 September</p>
+                            </div>
+                        </div>
+                        <div id="wind" class="border-1 border-secondary rounded-md p-2 text-center">
+                            <p>Wind Speed</p>
+                            <i class="fas fa-wind text-[80px] text-secondary p-2"></i>
+                            <p class="wind-value-text text-2xl">18 km/h</p>
+                        </div>
+                        <div id="humidity" class="border-1 border-secondary rounded-md p-2 text-center">
+                            <p>Humidity</p>
+                            <i class="fa-solid fa-water text-[80px] text-secondary p-2"></i>
+                            <p class="humidity-value-txt text-2xl">64%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="forcastItemContainer"
+                class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-5 gap-6 pt-12 px-4 sm:px-4 lg:px-4 md:px-12 xl:px-12 2xl:px-12">
+                <div id="forecastItem"
+                    class="border-1 bg-blue-300 border-secondary rounded-md p-2 flex flex-col items-center">
+                    <p class="text-white">05 Aug</p>
+                    <img src="./images/weather/atmosphere.svg">
+                    <p class="text-2xl text-white">28°C</p>
+                </div>
+                <div id="forecastItem"
+                    class="border-1 bg-blue-300 border-secondary rounded-md p-2 flex flex-col items-center">
+                    <p class="text-white">05 Aug</p>
+                    <img src="./images/weather/atmosphere.svg">
+                    <p class="text-2xl text-white">28°C</p>
+                </div>
+                <div id="forecastItem"
+                    class="border-1 bg-blue-300 border-secondary rounded-md p-2 flex flex-col items-center">
+                    <p class="text-white">05 Aug</p>
+                    <img src="./images/weather/atmosphere.svg">
+                    <p class="text-2xl text-white">28°C</p>
+                </div>
+                <div id="forecastItem"
+                    class="border-1 bg-blue-300 border-secondary rounded-md p-2 flex flex-col items-center">
+                    <p class="text-white">05 Aug</p>
+                    <div class="text-center">
+                        <img src="./images/weather/atmosphere.svg">
+                    </div>
+                    <p class="text-2xl text-white">28°C</p>
+                </div>
+            </div>
+            <div class="hidden" id="not-found">
+                <img class="w-[84%] mx-auto h-[500px]" src="./images/404-pages.jpg">
+            </div>
+            <div class="" id="search">
+                <img class="mx-auto h-[500px]" src="./images/search.png">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
