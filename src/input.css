@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #eef3ff;
+    --color-secondary: #2b6ef6;
+    --color-bgcolor: ;
+    --font-Outfit: "Outfit", "sans-serif";
+}
+.container {
+    position: relative;
+}
+.weather-rainy {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: #000;
+    animation: fall linear infinite;
+    top: -15px;
+}
+@keyframes fall {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(110vh);
+    }
+}
