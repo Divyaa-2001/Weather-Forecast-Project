@@ -1,7 +1,7 @@
 # Weather-Forecast-Project
 
 
-A simple **Weather Forecast Web App** built with **Vanilla JavaScript**, fetching real-time weather data from the **OpenWeatherMap API**.  
+A simple **Weather Forecast Web App** built with **JavaScript**, fetching real-time weather data from the **OpenWeatherMap API**.  
 
 It supports:
 - Current weather (temperature, condition, humidity, wind speed)
